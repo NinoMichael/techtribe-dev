@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../webfonts/Mulish/static/Mulish-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Black Ops One';
+    src: url(../webfonts/Black_Ops_One/BlackOpsOne-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(../image/WorldIT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Mulish', Arial;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 5.3rem;
+}
+
+main {
+    opacity : .95;
+    background-color: white;
+    box-shadow: 0 0 18px rgba(24, 23, 23, 0.575) inset;
+    width : 65%;
+    height : 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .introtxt {
+    width : 110%;
+    margin : 70px 50px;
+}
+
+.introtxt h3 {
+    font-weight: bold;
+    color : rgb(1,1,32);
+}
+
+.introtxt span {
+    font-family: 'Black Ops One';
+}
+
+.introtxt p {
+    font-size: 1.1em;
+    margin-top : 3rem;
+}
+
+.introtxt button {
+    background-color: rgb(51, 14, 99);
+    font-size: 1.1em;
+    color : white;
+    margin: 50px 0px 0px 70px;
+    width : 16rem;
+    height: 3rem;
+    padding : 10px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor : pointer;
+}
+
+.introtxt button:hover {
+    background-color: rgb(42, 12, 82);
+}
+
+.introtxt button:active {
+    background-color: rgb(35, 10, 68);
+    transform: scale(.98);
+}
+
+main .introimg {
+    background-color: rgb(1,1,32);
+    border-radius: 10px;
+    width : 90%;
+}
+
+.introimg img {
+    width : 100%;
+    margin-top: 3rem;
+}

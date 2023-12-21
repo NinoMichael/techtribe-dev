@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Etape 1</title>
+    <link rel="stylesheet" href="register1.css">
+    <link rel="stylesheet" href="../fontawesome/all.min.css">
+    <script type = "module" src = "register1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+
+    <main>
+        <div class="steptxt">
+            <h2>Etape 1 : Informations de base</h2>
+            <p>Veuiller remplir le formulaire d'inscription ci-après : nom, prénom, date de naissance, adresse e-mail, identifiant et mot de passe. La modification ultérieure des informations personnelles est permise sous certaine condition après inscription.</p>
+            <div class="progress">
+                <div class="step-container">
+                  <div id ="step-line"></div>
+                  <div class="step active">1</div>
+                  <div class="step">2</div>
+                  <div class="step">3</div>
+                </div>
+              </div>
+        </div>
+
+        <div class ="stepform">
+             <form id = "myForm" action="" method="" autocomplete="off">
+                <input type="text" name="nom" id="nom" placeholder="Nom"><br>
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br>
+                <input type="text" name="naissance" id="naissance" placeholder = "Date de naissance">
+                <i id="calendarIcon" class="fa fa-calendar-alt"></i>
+                <input type="email" name="email" id="email" placeholder="Adresse e-mail"><br>
+                <input type="text" name="identifiant" id="identifiant" placeholder="Identifiant"><br>
+                <input type="password" name="mdp" id="mdp" placeholder="Mot de passe">
+                <i id = "iconPwd1" class="fa fa-eye"></i>
+                <input type="password" name="mdpconfirm" id="mdpconfirm" placeholder="Confirmer mot de passe"> 
+                <i id = "iconPwd2" class="fa fa-eye"></i>
+                <button id = "prev" type="button">Retour</button>
+                <button id = "next" type="button" >Suivant</button>
+            </form>
+    </div>
+    </main>
+
+
+</body>
+</html>

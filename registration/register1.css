@@ -1,0 +1,188 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../webfonts/Mulish/static/Mulish-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Black Ops One';
+    src: url(../webfonts/Black_Ops_One/BlackOpsOne-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(../image/WorldIT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Mulish', Arial;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 5.3rem;
+}
+
+main {
+    opacity : .95;
+    background-color: white;
+    box-shadow: 0 0 18px rgba(24, 23, 23, 0.575) inset;
+    width : 65%;
+    height : 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .steptxt {
+    background-color: rgb(1,1,32);
+    border-radius: 10px;
+    color : white;
+    width : 47%;
+    padding: 60px 40px;
+}
+
+.progress {
+    text-align: center;
+    margin-left: 40px;
+    color : black;
+}
+
+.step-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width : 90%;
+    position: relative;
+    width : 240px;
+    margin-top: 50px;
+    z-index : 1;
+}
+
+#step-line {
+    background-color: rgb(51, 14, 99);
+    position: absolute;
+    top : 50%;
+    height : 4px;
+    width : 1%;
+    z-index : 1;
+    transition: .8s ease;
+}
+
+#step-line::before {
+    content: var(--before-content, '');
+    background-color: whitesmoke;
+    position: absolute;
+    height : 4px;
+    width : var(--before-width, 10000%);
+    z-index : -1;
+}
+
+.step {
+   background-color : whitesmoke;
+   height : 30px;
+   width: 30px;
+   border-radius: 50%;
+   z-index : 1;
+   padding : 5px;
+   transition: .8s ease;
+}
+
+.step.active {
+   background-color: rgb(51, 14, 99);
+   color : white;
+}
+
+.stepform {
+    width : 50%;
+    padding : 25px 60px 0px 60px;
+}
+
+.stepform input {
+    position: relative;
+    margin-bottom: 10px;
+    width : 100%;
+    padding : 0.8rem;
+    outline: none;
+    border: 1px solid rgba(26, 26, 26, 0.25);
+    border-radius: 10px;
+}
+
+#calendarIcon {
+    position: absolute;
+    right : 335px;
+    bottom : 390px;
+    color : rgba(90, 88, 88, 0.808);
+    cursor : pointer;
+}
+
+.steptxt h2 {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.steptxt p {
+    font-size: 1.1em;
+    width : 90%;
+}
+
+#prev, #next {
+    background-color: rgb(51, 14, 99);
+    border : none;
+    border-radius: 5px;
+    padding : 10px 25px;
+    font-size: 0.9em;
+    color : white;
+    cursor : pointer;
+}
+
+#prev {
+    margin: 20px 30px 0px 90px;
+}
+
+#next {
+    margin: 5px 0px 0px 0px;
+}
+
+#prev:hover, #next:hover {
+    background-color: rgb(42, 12, 82);
+}
+
+#prev:active, #next:active {
+    background-color: rgb(35, 10, 68);
+    transform: scale(.98);
+}
+
+#iconPwd1 {
+    position: absolute;
+    right : 335px;
+    bottom : 230px;
+    color : rgba(90, 88, 88, 0.808);
+    cursor : pointer;
+}
+
+#iconPwd2 {
+    position: absolute;
+    right : 335px;
+    bottom : 180px;
+    color : rgba(90, 88, 88, 0.808);
+    cursor : pointer;
+}
+
+#iconPwd1:hover, #iconPwd2:hover {
+    color : rgba(66, 66, 66, 0.808);
+}
+
+#iconPwd1:active, #iconPwd2:active {
+    color : rgba(43, 42, 42, 0.808);
+    transform: scale(.85);
+}
+
+
+

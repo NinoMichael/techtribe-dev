@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url(../webfonts/Mulish/static/Mulish-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'Black Ops One';
+    src: url(../webfonts/Black_Ops_One/BlackOpsOne-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url(../image/WorldIT.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Mulish', Arial;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 5.3rem;
+}
+
+main {
+    opacity : .95;
+    background-color: white;
+    box-shadow: 0 0 18px rgba(24, 23, 23, 0.575) inset;
+    width : 65%;
+    height : 500px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+main .image {
+    background-color: rgb(1,1,32);
+    border-radius: 10px;
+    color : white;
+    width : 48%;
+    padding: 60px 40px;
+}
+
+.image img {
+    width : 98%;
+    margin : 20px 0px 0px 10px;
+}
+
+main .stepform {
+    width : 55%;
+    padding : 70px 50px 30px 50px; 
+}
+
+.stepform p {
+    margin-bottom: 30px;
+}
+
+form input {
+    position: relative;
+    width : 60%;
+    padding : 0.8rem;
+    outline: none;
+    border: 1px solid rgba(26, 26, 26, 0.25);
+    border-radius: 10px;
+}
+
+#btn {
+    background-color: rgb(51, 14, 99);
+    border : none;
+    border-radius: 5px;
+    padding : 10px 25px;
+    font-size: 0.9em;
+    color : white;
+    cursor : pointer;
+}
+
+#btn:hover {
+    background-color: rgb(42, 12, 82);
+}
+
+#btn:active {
+    background-color: rgb(35, 10, 68);
+    transform: scale(.98);
+}
+
+.custom-dialog {
+    color : white;
+    background-color: rgba(1, 1, 32, 0.95);
+    font-size: 0.9em;
+}
+
+.loading-content {
+    color : white;
+    background-color: rgba(1, 1, 32, 0.95);
+    font-size: 0.9em;
+    height : 20vh;
+}

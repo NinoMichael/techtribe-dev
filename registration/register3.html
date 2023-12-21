@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Etape 3</title>
+    <link rel="stylesheet" href="register3.css">
+    <link rel="stylesheet" href="../fontawesome/all.css">
+    <script defer src="register3.js"></script>
+    <link rel="stylesheet" href="../sweetAlert/sweetalert2.css">
+    <script defer src="../sweetAlert/sweetalert2.all.min.js"></script>
+</head>
+<body>
+
+    <main>
+        <div class="steptxt">
+            <i class="fa fa-times"></i>
+            <h2>Etape 3 : Politique d'utilisation</h2>
+            <p>Confirmez votre inscription en accord avec nos termes de services et politiques de confidentialité stipulés ci-après et jouissez les droits d'utilisateurs y afférent</p>
+            <div class="progress">
+                <div class="step-container">
+                  <div id ="step-line"></div>
+                  <div class="step">1</div>
+                  <div class="step">2</div>
+                  <div class="step">3</div>
+                </div>
+              </div>
+        </div>
+
+        <div id="stepform">
+            <h2>Termes de services et de confidentialité</h2>
+            <div class="quote">
+                <p id = "terms">En vous inscrivant sur <span>TechTribe</span>, vous garantissez la précision des informations fournies et vous êtes responsable de maintenir la confidentialité de votre compte. <br>
+                   <strong>Comportement</strong> : Vous vous engagez à respecter les autres membres de la communauté TechTribe. Tout comportement inapproprié, y compris le harcèlement ou la promotion de contenu offensant, peut entrainer la suspension de votre compte. <br>
+                   <strong>Propriété intellectuelle</strong> : Vous conservez tous les droits sur le contenu que vous partagez sur TechTribe. Cependant, en publiant le contenu, vous accordez à la plateforme une licence mondiale et non exclusive pour utiliser, reproduire et distribuer le contenu. <br>
+                   <strong>Responsabilité</strong> : TechTribe ne peut être tenu responsable des pertes ou dommages résultant de l'utilisation de la plateforme. Nous ne garantissons pas l'exactitude, l'exhaustivité ou l'actualité des informations fournies.
+                </p>
+                <p id = "privacy"><strong>Collecte d'informations</strong> : Nous recueillons des informations personnelles lors de cette inscription et autres détails pertinents. Ces informations sont utilisées pour personnaliser votre expérience sur la plateforme. <br>
+                    <strong>Utilisation des informations</strong> : Vos informations peuvent être utilisées pour vous envoyer des notifications, des mises à jour de la plateforme ou d'autres communications liées à votre compte sur TechTribe. Nous ne partageons pas vos informations personnelles avec des tiers sans votre consentement. <br>
+                    <strong>Cookies</strong> : TechTribe utilise les cookies pour améliorer votre expérience utilisateur. Vous avez le contrôle sur l'acceptation des cookies via les paramètres de votre navigateur ou application. <br>
+                    <strong>Sécurité</strong> : Nous mettons en place des mesures de sécurité pour protéger vos informations, mais aucun système n'est totalement exempt des risques. Vous êtes responsable de la sécurité de votre compte, y compris votre mot de passe. 
+                
+                </p>
+            </div>
+        
+            <form id = "myForm" action="" method="post">
+                <input type="checkbox" name="agree" id="agree">
+                <label for="agree">J'accepte les <a href="#terms">termes de services</a> & <a href="#privacy">politiques de confidentialité</a> de la plateforme</label>
+            </form>
+            <button id = "next" type="button" >Suivant</button>
+
+        </div>
+    </main>
+    
+    
+</body>
+</html>

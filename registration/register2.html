@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Etape 2</title>
+    <link rel="stylesheet" href="register2.css">
+    <link rel="stylesheet" href="../fontawesome/all.css">
+    <script defer src="register2.js"></script>
+    <link rel="stylesheet" href="../sweetAlert/sweetalert2.css">
+    <script defer src="../sweetAlert/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    
+    <main>
+        <div class="steptxt">
+            <i class="fa fa-times"></i>
+            <h2>Etape 2 : Profil IT</h2>
+            <p>Ajoutez maintenant une touche personnelle à votre future profil en précisant votre statut qui vous démarquera dans la communauté IT. La modification ultérieure des informations personnelles est permise.</p>
+            <div class="progress">
+                <div class="step-container">
+                  <div id ="step-line"></div>
+                  <div class="step active">1</div>
+                  <div class="step active">2</div>
+                  <div class="step">3</div>
+                </div>
+              </div>
+        </div>
+
+        <div class ="stepform" id = "stepform">
+            <form id = "myForm" action="" method="post">
+                <div class="categorie">
+                    <div class="option">
+                        <input class = "mycheckbox" type="radio" name="profil" id="etudiant">
+                        <label for="etudiant">Etudiant</label><br>
+                    </div>
+                    <div class="para">Pour une insertion dans le monde professionnelle IT avec vos futurs objectifs</div>
+                </div>
+
+                <div class="categorie">
+                    <div class="option">
+                       <input class = "mycheckbox" type="radio" name="profil" id="professionnel">
+                       <label for="professionnel">Professionnel</label><br>
+                    </div>
+                    <div class="para">Pour la recherche d'éventuelles opportunités de collaboration et d'expérience</div>
+                </div>
+
+                <div class="categorie">
+                   <div class="option">
+                      <input class = "mycheckbox" type="radio" name="profil" id="entreprise">
+                      <label for="entreprise">Entreprise</label><br>
+                   </div>
+                   <div class="para">Pour la promotion des services numériques et obtenir de meilleur chiffre d'affaire</div>
+                </div>
+
+                <div class="categorie">
+                   <div class="option">
+                      <input class = "mycheckbox" type="radio" name="profil" id="freelancer">
+                      <label for="freelancer">Freelancer</label><br>
+                   </div>
+                   <div class="para">Pour une contribution professionnelle de manière indépendante sur la plateforme</div>
+                </div>
+
+            </form>
+            <button id = "next" type="button" >Suivant</button>
+        </div>
+    </main>
+
+</body>
+</html>

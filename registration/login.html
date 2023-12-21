@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTribe - Connexion ou Inscription</title>
+    <link rel="stylesheet" href="../registration/login.css">
+    <link rel="stylesheet" href="../fontawesome/all.css">
+    <link rel="stylesheet" href="../fontawesome/brands.min.css">
+    <script type = "module" defer src="login.js"></script>
+    <link rel="stylesheet" href="../sweetAlert/sweetalert2.css">
+    <script src="../sweetAlert/sweetalert2.js"></script>
+
+</head>
+<body>
+    
+    <main>
+        <div class="txt">
+           <h2>TechTribe</h2>
+           <p id ="lead">Connectez-vous à votre compte</p>
+           
+           <form id = "myForm" action="" method="post" autocomplete="off">
+              <label for="email">Adresse e-mail</label><br>
+              <input type="email" name="email" id="email" placeholder="exemple@gmail.com"><br>
+              <label for="mdp">Mot de passe</label><br>
+              <input type="password" name="mdp" id="mdp"><br>
+              <i id = "iconPwd" class="fa fa-eye"></i>
+              <div class="option">
+                <input type="checkbox" name="remember" id="remember">
+                <p>Se souvenir de moi</p>
+                <p><a href="pwdReset.html">Mot de passe oublié ?</a></p>
+             </div>
+             <button type="button" id = "signin">Se connecter</button><br>
+           </form>
+
+           <div id="google">
+                <i class="fa-brands fa-google"></i>
+               <a>Se connecter avec Google</a>
+            </div>
+           <div id="github">
+                <i class="fa-brands fa-github"></i>
+               <a>Se connecter avec Github</a>
+            </div>
+
+           <p id="signup">Vous n'avez pas encore de compte ? <a href="registerHome.html">Inscrivez-vous ici</a></p>
+        </div>
+        
+        <div class="image" id = "imagetech">
+            <div id = "imagetech1">
+                <img src="../registration/img/reseau.jpg" alt="Communauté de développeur">
+                <p>Un espace de partage entre les passionnés du monde IT</p>
+            </div>
+            <div id = "imagetech2">
+                <img src="../registration/img/devCommunity.jpg" alt="Communauté de développeur">
+                <p>Découvrez les actualités quotidiennes du monde IT</p>
+            </div>
+            <div id ="imagetech3">
+                <img src="../registration/img/contribution.jpg" alt="Communauté de développeur">
+                <p>Interagissez avec les autres avec la Communauté IT</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
